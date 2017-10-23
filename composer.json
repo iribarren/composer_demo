@@ -1,0 +1,14 @@
+{
+    "name": "vendor/composer-demo",
+    "description": "Description of project composer_demo.",
+    "authors": [
+        {
+            "name": "aritz.ibarren",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "dev-master",
+        "iribarren/slack-notify": "dev-master"
+    }
+}
