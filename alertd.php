@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 define("FILEPATH", "/var/tmp/error.txt");
 
 // Create the Transport
-$transport = new Swift_SendmailTransport('/usr/sbin/exim -bs');
+$transport = new Swift_SendmailTransport('/usr/sbin/sendmail -bs');
 
 $mailer = new Swift_Mailer($transport);
 
@@ -17,10 +17,11 @@ while (true) {
         echo "still checking for errors";
     }
     if (file_exists(FILEPATH)) {
+        echo "Error! enviando notificacion...".PHP_EOL;
         //send email
         $message = (new Swift_Message('Wonderful Subject'))
             ->setFrom(['alertas@alertas.com' => 'Mr Alerta'])
-            ->setTo(['iribarren.aritzz@gmail.com'])
+            ->setTo(['iribarren.aritz@gmail.com'])
             ->setBody('Here is the message itself')
         ;
         $result   = $mailer->send($message);
