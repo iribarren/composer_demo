@@ -62,11 +62,23 @@ Problemas:
 
 # ENTER COMPOSER
 
+Para intentar dar solución a estos problemas, nace composer. Composer hace uso 
+de las nuevas funcionaldiades que se añaden a PHP, sobretodo los namespaces
+
+Diapositiva: Enter composer
+
+* Gestor de paquetes a nivel de aplicación
+* Gestión de dependencias
+* Inspirado en npm de node.js y bundler de ruby
+* Repositorio de paquetes packagist.org
+* Autoload (PSR-0, PSR-4)
+
 Diapositiva -> PHP-FIG
 
 * Que: Grupo de interoperabilidad de frameworks
 * Objectivo: mejorar el ecosistema PHP
 * Como: Recomendaciones de standares
+* 
 
 Para solucionar estos (y otros) problemas de PHP, en 2009 diferentes miembros de
 la comunidad crearon PHP-FIG (Framework Interoperability Group) con la intención
